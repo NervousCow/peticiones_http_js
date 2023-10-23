@@ -3,6 +3,27 @@
     font-size: 24px;
 }
 
+#contenedor-general {
+    display: grid; /* podria poner grid y repartir el espacio en el eje X 60/40 o 50/50 */
+    grid-template-columns: 60% 40%;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "A B";
+}
+
+#contenedor-consulta {
+    grid-area: A;
+}
+
+#contenedor-respuesta {
+    grid-area: B;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    max-width: max-content;
+}
+
 section {
     display: flex;
     flex-direction: column;

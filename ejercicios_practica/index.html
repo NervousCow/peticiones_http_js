@@ -6,19 +6,30 @@
   <title>Programación asíncrona</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="StyleSheet" href="css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
   <img src="images/inove.jpg" height="275px" alt="inovelogo"/>
-  <p>Documentación de la API de "Rick and Morty"</p>
-  <a href="https://rickandmortyapi.com/">https://rickandmortyapi.com/</a>
-  <p>Ejemplo del link para el personaje Biblesaurus:</p>
-  <a href="https://rickandmortyapi.com/api/character/?name=Biblesaurus">https://rickandmortyapi.com/api/character/?name=Biblesaurus</a>
-  <section id="login">
-    <p>Ingrese el personaje que desea consultar:</p>
-    <input id="personaje" type="text" value="" placeholder="personaje">
-    <button id="btnConsultar">Consultar</button>
-  </section>
+  <div id="contenedor-general">
+    <div id="contenedor-consulta">
+      <p>Documentación de la API de "Rick and Morty"</p>
+      <a href="https://rickandmortyapi.com/">https://rickandmortyapi.com/</a>
+      <p>Ejemplo del link para el personaje Biblesaurus:</p>
+      <a href="https://rickandmortyapi.com/api/character/?name=Biblesaurus">https://rickandmortyapi.com/api/character/?name=Biblesaurus</a>
+      <section id="login">
+        <p>Ingrese el personaje que desea consultar:</p>
+        <input id="personaje" type="text" value="" placeholder="personaje">
+        <button id="btnConsultar">Consultar</button>
+      </section>
+    </div>
+    <div id="contenedor-respuesta">
+      <h3>Resultado consulta</h3>
+      <section id="html-respuesta" style="background-color:powderblue">
+        
+      </section>
+    </div>
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 
